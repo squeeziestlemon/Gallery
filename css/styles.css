@@ -8,7 +8,7 @@
     --accent-color: #6f7276;
 }
 
-body {
+.g-base {
     background-color: #FFFFFF;
     color: var(--base-color);
     font-family: Arial, Helvetica, sans-serif;
@@ -30,14 +30,14 @@ header {
     border-bottom: dotted 2px var(--base-color);
 }
 
-.heading {
+.g-heading {
     font-family: "share tech";
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
 }
 
-.sub-heading {
+.g-sub-heading {
     font-size: 1rem;
     letter-spacing: 8px;
     font-weight: 600;
@@ -62,28 +62,30 @@ nav a:hover {
     color: #6f7276;
 }
 
-figure {
+#p-home #s-thumbnails figure,
+#p-poster #s-image figure {
     margin: 0px;
 }
 
-figcaption {
+#p-home #s-thumbnails figcaption,
+#p-poster #s-image figcaption{
     font-size: 0.8rem;
     font-weight: 900;
     color: var(--accent-color);
     padding-top: 3px;
 }
 
-footer {
+#p-home #s-footer {
     padding-top: 20px;
     font-weight: bold;
 }
 
-aside {
+#p-home #s-aside {
     padding-bottom: 10px;
     margin-top: 10px;
 }
 
-#thumbnails {
+#p-home #s-thumbnails {
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +98,7 @@ img {
     height: auto;
 }
 
-nav {
+#p-poster #s-navigation {
     padding: 20px 0;
     display: flex;
 
@@ -108,27 +110,27 @@ nav {
     }
 }
 
-i {
+#p-poster #s-navigation i{
     padding-right: 8px;
 }
 
-.nav-link {
+#p-poster #s-navigation .nav-link {
     padding-right: 20px;
     font-weight: bold;
 }
 
-.nav-link:nth-of-type(3) {
+#p-poster #s-navigation .nav-link:nth-of-type(3) {
     padding-left: 20px;
     border-left: 2px dotted var(--accent-color);
 }
 
 @media (max-width: 500px) {
-    #thumbnails {
+    #p-home #s-thumbnails {
         flex-direction: column;
         align-items: center;
     }
 
-    figure {
+    #p-home #s-thumbnails figure {
         padding-right: 0px;
     }
 }
